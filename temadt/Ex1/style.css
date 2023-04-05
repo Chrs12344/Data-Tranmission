@@ -1,0 +1,36 @@
+.message-input {
+  border: 1px solid #777;
+  padding: 7px;
+  margin: 5px;
+}
+
+.output {
+  padding: 7px;
+  margin: 5px;
+  color: rgb(27, 189, 27);
+}
+
+.process-button {
+  border: 1px solid #777;
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+.process-button:hover {
+  background-color: #999;
+  cursor: pointer;
+}
+
+.message-input:focus {
+  outline: none;
+  border-color: rgb(27, 189, 27);
+}
+
+.output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-size: 24px;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue first app</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="libs/vue/vue.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Enter Your Name</h1>
+      <input class="message-input" v-model="message" placeholder="Name">
+      <button class="process-button" v-on:click="processMessage">Process</button>
+      <div class="output" v-if="message === '123'">Message is equal to 123.</div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-row {
+  margin: 20px auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.user-row:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.user-name {
+  width: 50%;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.user-city {
+  width: 50%;
+  display: inline-block;
+  font-size: 20px;
+  text-align: right;
+}
+
+.add-user-form {
+  margin: 20px auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.add-user-form input {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.add-user-form input:focus {
+  border-color: rgb(27, 189, 27);
+}
