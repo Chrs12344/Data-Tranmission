@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf -8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <!-- load the style . css -->
+        <link rel="stylesheet" href="style.css">
+        <!--load the d3.js library https://d3js.org/d3.v5.min.js-->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <title>Text Encoder</title>
+    </head>
+    <body>
+        <label for="toEncode">Enter text to encode: </label>
+        <input type="text" id="toEncode" name="toEncode" placeholder="Enter Text to Encode"><br><br>
+        <button onclick="redirectToHuff()">Encode with Huffman!</button>
+        <button onclick="redirectToShan()">Encode with Shannon-Fano!</button>
+
+        <script>
+            function redirectToHuff() {
+              var name = document.getElementById("toEncode").value;
+              if(name != "")
+              window.location.href = "arbore.html?text=" + name+"&method=H";
+            }
+            function redirectToShan() {
+              var name = document.getElementById("toEncode").value;
+              if(name != "")
+                window.location.href = "arbore.html?text=" + name+"&method=SF";
+            }
+          </script>
+        
+    </body>
+</html>
